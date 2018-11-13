@@ -17,6 +17,7 @@
 		4AEA6DFC2199950B006351DB /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DFB2199950B006351DB /* TopNavigationStackView.swift */; };
 		4AEA6DFE2199A3A9006351DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DFD2199A3A9006351DB /* CardView.swift */; };
 		4AFAE405219B337B007871F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAE404219B337B007871F0 /* User.swift */; };
+		4AFAE408219B3D0F007871F0 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAE407219B3D0F007871F0 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4AEA6DFB2199950B006351DB /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		4AEA6DFD2199A3A9006351DB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4AFAE404219B337B007871F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4AFAE407219B3D0F007871F0 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,8 @@
 			children = (
 				4AEA6DE321998A78006351DB /* AppDelegate.swift */,
 				4AEA6DF721998CCA006351DB /* Extensions */,
-				4AFAE403219B3364007871F0 /* Modal */,
+				4AFAE406219B3CEC007871F0 /* ViewModel */,
+				4AFAE403219B3364007871F0 /* Model */,
 				4AEA6DF8219990ED006351DB /* Views */,
 				4AFAE402219B32B7007871F0 /* Controllers */,
 				4AEA6DEC21998A79006351DB /* LaunchScreen.storyboard */,
@@ -103,12 +106,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4AFAE403219B3364007871F0 /* Modal */ = {
+		4AFAE403219B3364007871F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				4AFAE404219B337B007871F0 /* User.swift */,
 			);
-			path = Modal;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AFAE406219B3CEC007871F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4AFAE407219B3D0F007871F0 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */,
 				4AEA6DFA2199912E006351DB /* HomeBottomControlStackView.swift in Sources */,
 				4AEA6DF621998C15006351DB /* Extensions+UIView.swift in Sources */,
+				4AFAE408219B3D0F007871F0 /* CardViewModel.swift in Sources */,
 				4AEA6DFE2199A3A9006351DB /* CardView.swift in Sources */,
 				4AEA6DFC2199950B006351DB /* TopNavigationStackView.swift in Sources */,
 				4AFAE405219B337B007871F0 /* User.swift in Sources */,
