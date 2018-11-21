@@ -14,28 +14,29 @@ class HomeViewController: UIViewController {
     let cardsDeckView = UIView()
     let buttonsStackView = HomeBottomControlStackView()
     
-    let users = [
-        User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "1"),
-        User(name: "Candy", age: 18, profession: "Accountant", imageName: "2"),
-        User(name: "Carmen", age: 22, profession: "Pianist", imageName: "3")
-    ]
-    
-    let cardViewModels = [
-        User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "1").toCardViewModel(),
-        User(name: "Candy", age: 18, profession: "Accountant", imageName: "2").toCardViewModel(),
-        User(name: "Carmen", age: 22, profession: "Pianist", imageName: "3").toCardViewModel()
-    ]
+    let cardViewModels: [CardViewModel] = {
+        let producers = [
+            User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "1"),
+            User(name: "Candy", age: 18, profession: "Accountant", imageName: "2"),
+            User(name: "Carmen", age: 22, profession: "Pianist", imageName: "3"),
+            Advetiser(title: "Burger", brandName: "McDonald's", posterPhotoName: "ads1")
+        ] as [ProduceCardViewModel]
+        
+        let viewModels = producers.map { (producer) -> CardViewModel in
+            return producer.toCardViewModel()
+        }
+        
+        return viewModels
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupLayout()
         setupDummyCards()
-        
     }
 
     //MARK:- Fileprivate
-    
     fileprivate func setupLayout() {
         let overallStackView = UIStackView(arrangedSubviews: [topStackView, cardsDeckView, buttonsStackView])
         overallStackView.axis = .vertical
@@ -50,9 +51,7 @@ class HomeViewController: UIViewController {
     fileprivate func setupDummyCards() {
         cardViewModels.forEach { (cardViewModel) in
             let cardView = CardView(frame: .zero)
-            cardView.imageView.image = UIImage(named: cardViewModel.imageName)
-            cardView.informationLabel.attributedText = cardViewModel.attributedString
-            cardView.informationLabel.textAlignment = cardViewModel.textAlignment
+            cardView.cardViewModel = cardViewModel
             cardsDeckView.addSubview(cardView)
             cardView.fillSuperview()
         }

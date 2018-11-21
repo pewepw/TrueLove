@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A2F8B0A21A5E950008BB00F /* Advetiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F8B0921A5E950008BB00F /* Advetiser.swift */; };
 		4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DE321998A78006351DB /* AppDelegate.swift */; };
 		4AEA6DE621998A78006351DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DE521998A78006351DB /* HomeViewController.swift */; };
 		4AEA6DE921998A78006351DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEA6DE721998A78006351DB /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A2F8B0921A5E950008BB00F /* Advetiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advetiser.swift; sourceTree = "<group>"; };
 		4AEA6DE021998A78006351DB /* TrueLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEA6DE321998A78006351DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AEA6DE521998A78006351DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4AFAE404219B337B007871F0 /* User.swift */,
+				4A2F8B0921A5E950008BB00F /* Advetiser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				4AEA6DFA2199912E006351DB /* HomeBottomControlStackView.swift in Sources */,
 				4AEA6DF621998C15006351DB /* Extensions+UIView.swift in Sources */,
 				4AFAE408219B3D0F007871F0 /* CardViewModel.swift in Sources */,
+				4A2F8B0A21A5E950008BB00F /* Advetiser.swift in Sources */,
 				4AEA6DFE2199A3A9006351DB /* CardView.swift in Sources */,
 				4AEA6DFC2199950B006351DB /* TopNavigationStackView.swift in Sources */,
 				4AFAE405219B337B007871F0 /* User.swift in Sources */,
