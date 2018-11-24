@@ -10,7 +10,7 @@ import UIKit
 
 class TopNavigationStackView: UIStackView {
     
-    let settinsButton = UIButton(type: .system)
+    let settingsButton = UIButton(type: .system)
     let messageButton = UIButton(type: .system)
     let fireImageView = UIImageView(image: #imageLiteral(resourceName: "app_icon"))
 
@@ -20,10 +20,10 @@ class TopNavigationStackView: UIStackView {
         heightAnchor.constraint(equalToConstant: 80).isActive = true
         
         fireImageView.contentMode = .scaleAspectFit
-        settinsButton.setImage(#imageLiteral(resourceName: "top_left_profile").withRenderingMode(.alwaysOriginal), for: .normal)
+        settingsButton.setImage(#imageLiteral(resourceName: "top_left_profile").withRenderingMode(.alwaysOriginal), for: .normal)
         messageButton.setImage(#imageLiteral(resourceName: "top_right_messages").withRenderingMode(.alwaysOriginal), for: .normal)
         
-        [settinsButton, UIView(), fireImageView, UIView(), messageButton].forEach { (v) in
+        [settingsButton, UIView(), fireImageView, UIView(), messageButton].forEach { (v) in
             addArrangedSubview(v)
         }
         
