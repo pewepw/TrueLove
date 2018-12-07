@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import JGProgressHUD
 
 class RegistrationViewController: UIViewController {
 
@@ -56,6 +58,7 @@ class RegistrationViewController: UIViewController {
         button.isEnabled = false
         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         button.layer.cornerRadius = 25
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         return button
     }()
     
@@ -141,6 +144,31 @@ class RegistrationViewController: UIViewController {
             print("password changing", textField.text ?? "")
             registrationViewModel.password = textField.text
         }
+    }
+    
+    @objc fileprivate func handleRegister() {
+        handleTapDismiss()
+        
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (res, err) in
+            if let err = err {
+                print(err)
+                self.showHUDWithError(error: err)
+                return
+            }
+            
+            print("Successfully register firebase user ", res?.user.uid ?? "")
+        }
+    }
+    
+    fileprivate func showHUDWithError(error : Error) {
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = error.localizedDescription
+        hud.detailTextLabel.text = error.localizedDescription
+        hud.show(in: self.view)
+        hud.dismiss(afterDelay: 4)
     }
     
     fileprivate func setupTagGesture() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A062DF521BB1C6A001FD85B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A062DF421BB1C6A001FD85B /* GoogleService-Info.plist */; };
 		4A2F8B0A21A5E950008BB00F /* Advetiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F8B0921A5E950008BB00F /* Advetiser.swift */; };
 		4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */; };
 		4A6044AC21A9DDBC006FDB45 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */; };
@@ -22,9 +23,11 @@
 		4AEA6DFE2199A3A9006351DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DFD2199A3A9006351DB /* CardView.swift */; };
 		4AFAE405219B337B007871F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAE404219B337B007871F0 /* User.swift */; };
 		4AFAE408219B3D0F007871F0 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFAE407219B3D0F007871F0 /* CardViewModel.swift */; };
+		649BB1092A29F4A848AB649B /* Pods_TrueLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960906D81FDED41A3B644C91 /* Pods_TrueLove.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A062DF421BB1C6A001FD85B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A2F8B0921A5E950008BB00F /* Advetiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advetiser.swift; sourceTree = "<group>"; };
 		4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +45,9 @@
 		4AEA6DFD2199A3A9006351DB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4AFAE404219B337B007871F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4AFAE407219B3D0F007871F0 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		53AFF8BE702A716C1E6C3309 /* Pods-TrueLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueLove.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrueLove/Pods-TrueLove.release.xcconfig"; sourceTree = "<group>"; };
+		88FA6929B40D2C8DA5F36511 /* Pods-TrueLove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrueLove.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrueLove/Pods-TrueLove.debug.xcconfig"; sourceTree = "<group>"; };
+		960906D81FDED41A3B644C91 /* Pods_TrueLove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrueLove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649BB1092A29F4A848AB649B /* Pods_TrueLove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00B03717FBDDC47FD73823FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				960906D81FDED41A3B644C91 /* Pods_TrueLove.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		157E001056896096C08BFD36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88FA6929B40D2C8DA5F36511 /* Pods-TrueLove.debug.xcconfig */,
+				53AFF8BE702A716C1E6C3309 /* Pods-TrueLove.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4AEA6DD721998A78006351DB = {
 			isa = PBXGroup;
 			children = (
 				4AEA6DE221998A78006351DB /* TrueLove */,
 				4AEA6DE121998A78006351DB /* Products */,
+				157E001056896096C08BFD36 /* Pods */,
+				00B03717FBDDC47FD73823FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +110,7 @@
 				4AEA6DE721998A78006351DB /* Main.storyboard */,
 				4AEA6DEA21998A79006351DB /* Assets.xcassets */,
 				4AEA6DEF21998A79006351DB /* Info.plist */,
+				4A062DF421BB1C6A001FD85B /* GoogleService-Info.plist */,
 			);
 			path = TrueLove;
 			sourceTree = "<group>";
@@ -141,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AEA6DF221998A79006351DB /* Build configuration list for PBXNativeTarget "TrueLove" */;
 			buildPhases = (
+				D1BA6C0CAAF4B88CF67D3214 /* [CP] Check Pods Manifest.lock */,
 				4AEA6DDC21998A78006351DB /* Sources */,
 				4AEA6DDD21998A78006351DB /* Frameworks */,
 				4AEA6DDE21998A78006351DB /* Resources */,
+				186458DF7AC1B62BA9651DF8 /* [CP] Embed Pods Frameworks */,
+				CE1A68AD557A898FF6EAAB1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,11 +224,87 @@
 			files = (
 				4AEA6DEE21998A79006351DB /* LaunchScreen.storyboard in Resources */,
 				4AEA6DEB21998A79006351DB /* Assets.xcassets in Resources */,
+				4A062DF521BB1C6A001FD85B /* GoogleService-Info.plist in Resources */,
 				4AEA6DE921998A78006351DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		186458DF7AC1B62BA9651DF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrueLove/Pods-TrueLove-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrueLove/Pods-TrueLove-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE1A68AD557A898FF6EAAB1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrueLove/Pods-TrueLove-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrueLove/Pods-TrueLove-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1BA6C0CAAF4B88CF67D3214 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrueLove-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AEA6DDC21998A78006351DB /* Sources */ = {
@@ -360,6 +466,7 @@
 		};
 		4AEA6DF321998A79006351DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FA6929B40D2C8DA5F36511 /* Pods-TrueLove.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +485,7 @@
 		};
 		4AEA6DF421998A79006351DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53AFF8BE702A716C1E6C3309 /* Pods-TrueLove.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
