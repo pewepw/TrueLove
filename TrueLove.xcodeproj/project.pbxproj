@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A2F8B0A21A5E950008BB00F /* Advetiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F8B0921A5E950008BB00F /* Advetiser.swift */; };
+		4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */; };
 		4A6044AC21A9DDBC006FDB45 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */; };
 		4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */; };
 		4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DE321998A78006351DB /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		4A2F8B0921A5E950008BB00F /* Advetiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advetiser.swift; sourceTree = "<group>"; };
+		4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4AEA6DE021998A78006351DB /* TrueLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				4AFAE407219B3D0F007871F0 /* CardViewModel.swift */,
+				4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEA6DE621998A78006351DB /* HomeViewController.swift in Sources */,
+				4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */,
 				4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */,
 				4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */,
 				4AEA6DFA2199912E006351DB /* HomeBottomControlStackView.swift in Sources */,

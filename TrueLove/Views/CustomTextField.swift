@@ -16,6 +16,7 @@ class CustomTextField: UITextField {
         super.init(frame: .zero)
         
         layer.cornerRadius = 25
+        backgroundColor = .white
     }
     
     required init?(coder aDecoder: NSCoder) {
