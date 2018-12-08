@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A062DF521BB1C6A001FD85B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A062DF421BB1C6A001FD85B /* GoogleService-Info.plist */; };
 		4A2F8B0A21A5E950008BB00F /* Advetiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F8B0921A5E950008BB00F /* Advetiser.swift */; };
+		4A37F9EC21BBC7A800906E10 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37F9EB21BBC7A800906E10 /* Bindable.swift */; };
 		4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */; };
 		4A6044AC21A9DDBC006FDB45 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */; };
 		4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		4A062DF421BB1C6A001FD85B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A2F8B0921A5E950008BB00F /* Advetiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advetiser.swift; sourceTree = "<group>"; };
+		4A37F9EB21BBC7A800906E10 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				4AFAE407219B3D0F007871F0 /* CardViewModel.swift */,
 				4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */,
+				4A37F9EB21BBC7A800906E10 /* Bindable.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A37F9EC21BBC7A800906E10 /* Bindable.swift in Sources */,
 				4AEA6DE621998A78006351DB /* HomeViewController.swift in Sources */,
 				4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */,
 				4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */,
