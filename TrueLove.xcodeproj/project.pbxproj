@@ -157,9 +157,9 @@
 		4AFAE406219B3CEC007871F0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4A37F9EB21BBC7A800906E10 /* Bindable.swift */,
 				4AFAE407219B3D0F007871F0 /* CardViewModel.swift */,
 				4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */,
-				4A37F9EB21BBC7A800906E10 /* Bindable.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

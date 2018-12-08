@@ -104,7 +104,7 @@ class RegistrationViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self)
+//        NotificationCenter.default.removeObserver(self)
     }
 
     override func viewWillLayoutSubviews() {
@@ -140,6 +140,15 @@ class RegistrationViewController: UIViewController {
         registrationViewModel.bindableImage.bind { [unowned self] (img) in
             self.selectPhotoButton.setImage(img?.withRenderingMode(.alwaysOriginal), for: .normal)
         }
+        
+        registrationViewModel.bindableIsRegistering.bind { [unowned self] (isRegistering) in
+            if isRegistering == true {
+                self.registeringHUD.textLabel.text = "Register"
+                self.registeringHUD.show(in: self.view)
+            } else {
+                self.registeringHUD.dismiss()
+            }
+        }
     }
     
     @objc fileprivate func handleTextChange(textField: UITextField) {
@@ -155,20 +164,16 @@ class RegistrationViewController: UIViewController {
         }
     }
     
+    let registeringHUD = JGProgressHUD(style: .dark)
+    
     @objc fileprivate func handleRegister() {
         handleTapDismiss()
-        
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-        
-        Auth.auth().createUser(withEmail: email, password: password) { (res, err) in
+    
+        registrationViewModel.performRegistration { [unowned self] (err) in
             if let err = err {
-                print(err)
                 self.showHUDWithError(error: err)
                 return
             }
-            
-            print("Successfully register firebase user ", res?.user.uid ?? "")
         }
     }
     
@@ -179,6 +184,7 @@ class RegistrationViewController: UIViewController {
     }
     
     fileprivate func showHUDWithError(error : Error) {
+        registeringHUD.dismiss()
         let hud = JGProgressHUD(style: .dark)
         hud.textLabel.text = error.localizedDescription
         hud.detailTextLabel.text = error.localizedDescription
