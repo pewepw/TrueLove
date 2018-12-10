@@ -86,8 +86,9 @@ class HomeViewController: UIViewController {
     }
     
     @objc func handleSettings() {
-        let vc = RegistrationViewController()
-        present(vc, animated: true, completion: nil)
+        let vc = SettingsTableViewController()
+        let navController = UINavigationController(rootViewController: vc)
+        present(navController, animated: true, completion: nil)
     }
 
     //MARK:- Fileprivate
