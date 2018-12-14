@@ -11,12 +11,18 @@ import Firebase
 import JGProgressHUD
 import SDWebImage
 
+protocol SettingsTableViewControllerDelegate {
+    func didSaveSettings()
+}
+
 class CustomImagePickerContoller: UIImagePickerController {
     var imageButton: UIButton?
 }
 
 class SettingsTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    var delegate: SettingsTableViewControllerDelegate?
+    
     lazy var image1Button = createButton(selector: #selector(handleSelectPhoto))
     lazy var image2Button = createButton(selector: #selector(handleSelectPhoto))
     lazy var image3Button = createButton(selector: #selector(handleSelectPhoto))
@@ -166,7 +172,9 @@ class SettingsTableViewController: UITableViewController, UIImagePickerControlle
             }
 
             print("finished saving user info")
-            
+            self.dismiss(animated: true, completion: {
+                self.delegate?.didSaveSettings()
+            })
         }
     }
     
@@ -213,7 +221,7 @@ class SettingsTableViewController: UITableViewController, UIImagePickerControlle
         case 3:
             headerLabel.text = "Age"
         case 4:
-            headerLabel.text = "Age"
+            headerLabel.text = "Bio"
         default:
             headerLabel.text = "Seeking Age Range"
         }
