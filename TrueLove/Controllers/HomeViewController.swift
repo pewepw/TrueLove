@@ -46,6 +46,16 @@ class HomeViewController: UIViewController {
 //        fetchUsersfromFirestore()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser == nil {
+            let loginController = LoginController()
+            loginController.delegate = self
+            let navController = UINavigationController(rootViewController: loginController)
+            present(navController, animated: true, completion: nil)
+        }
+    }
+    
     fileprivate func fetchCurrentUser() {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         Firestore.firestore().collection("users").document(uid).getDocument { (snapshot, err) in
@@ -152,6 +162,14 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: SettingsTableViewControllerDelegate {
     func didSaveSettings() {
+        fetchCurrentUser()
+    }
+    
+    
+}
+
+extension HomeViewController: LoginControllerDelegate {
+    func didFinishLoggingIn() {
         fetchCurrentUser()
     }
     
