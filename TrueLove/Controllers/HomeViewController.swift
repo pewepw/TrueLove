@@ -180,8 +180,11 @@ extension HomeViewController: LoginControllerDelegate {
 }
 
 extension HomeViewController: CardViewDelegate {
-    func didTapMoreInfo() {
+    func didTapMoreInfo(cardViewModel: CardViewModel) {
+        print(cardViewModel.attributedString)
+        
         let userDetailController = UserDetailsViewController()
+        userDetailController.cardViewModel = cardViewModel
         present(userDetailController, animated: true, completion: nil)
     }
     
