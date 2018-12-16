@@ -15,6 +15,7 @@
 		4A6044AC21A9DDBC006FDB45 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */; };
 		4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */; };
 		4A62C35421C644240046C858 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62C35321C644230046C858 /* UserDetailsViewController.swift */; };
+		4A62C35621C6AB690046C858 /* SwipingPhotosPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62C35521C6AB690046C858 /* SwipingPhotosPageViewController.swift */; };
 		4A6E60FD21C169A300354244 /* AgeRangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E60FC21C169A300354244 /* AgeRangeTableViewCell.swift */; };
 		4A7C27B621C06CD900502ECA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C27B521C06CD900502ECA /* SettingsTableViewCell.swift */; };
 		4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DE321998A78006351DB /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4A62C35321C644230046C858 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		4A62C35521C6AB690046C858 /* SwipingPhotosPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingPhotosPageViewController.swift; sourceTree = "<group>"; };
 		4A6E60FC21C169A300354244 /* AgeRangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeTableViewCell.swift; sourceTree = "<group>"; };
 		4A7C27B521C06CD900502ECA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		4AEA6DE021998A78006351DB /* TrueLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4A62C35321C644230046C858 /* UserDetailsViewController.swift */,
+				4A62C35521C6AB690046C858 /* SwipingPhotosPageViewController.swift */,
 			);
 			path = "User Details";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				4A6E60FD21C169A300354244 /* AgeRangeTableViewCell.swift in Sources */,
 				4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */,
 				4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */,
+				4A62C35621C6AB690046C858 /* SwipingPhotosPageViewController.swift in Sources */,
 				4AEA6DFA2199912E006351DB /* HomeBottomControlStackView.swift in Sources */,
 				4A23F6C221BEEB1D00F79B48 /* SettingsTableViewController.swift in Sources */,
 				4AEA6DF621998C15006351DB /* Extensions+UIView.swift in Sources */,
