@@ -100,15 +100,18 @@ class HomeViewController: UIViewController {
             snapshot?.documents.forEach({ (documentSnapshot) in
                 let userDictionary = documentSnapshot.data()
                 let user = User(dictionary: userDictionary)
-                self.cardViewModels.append(user.toCardViewModel())
-                self.lastFetchedUser = user
-                self.setupCadFromUser(user: user)
+                if user.uid != Auth.auth().currentUser?.uid {
+                    //                self.cardViewModels.append(user.toCardViewModel())
+                    //                self.lastFetchedUser = user
+                    self.setupCadFromUser(user: user)
+                }
             })
         }
     }
     
     fileprivate func setupCadFromUser(user: User) {
         let cardView = CardView(frame: .zero)
+        cardView.delegate = self
         cardView.cardViewModel = user.toCardViewModel()
         cardsDeckView.addSubview(cardView)
         cardsDeckView.sendSubviewToBack(cardView)
@@ -171,6 +174,15 @@ extension HomeViewController: SettingsTableViewControllerDelegate {
 extension HomeViewController: LoginControllerDelegate {
     func didFinishLoggingIn() {
         fetchCurrentUser()
+    }
+    
+    
+}
+
+extension HomeViewController: CardViewDelegate {
+    func didTapMoreInfo() {
+        let userDetailController = UserDetailsViewController()
+        present(userDetailController, animated: true, completion: nil)
     }
     
     

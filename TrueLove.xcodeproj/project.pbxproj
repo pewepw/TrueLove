@@ -14,6 +14,7 @@
 		4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */; };
 		4A6044AC21A9DDBC006FDB45 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */; };
 		4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */; };
+		4A62C35421C644240046C858 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62C35321C644230046C858 /* UserDetailsViewController.swift */; };
 		4A6E60FD21C169A300354244 /* AgeRangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E60FC21C169A300354244 /* AgeRangeTableViewCell.swift */; };
 		4A7C27B621C06CD900502ECA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C27B521C06CD900502ECA /* SettingsTableViewCell.swift */; };
 		4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA6DE321998A78006351DB /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4A62C35321C644230046C858 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		4A6E60FC21C169A300354244 /* AgeRangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeTableViewCell.swift; sourceTree = "<group>"; };
 		4A7C27B521C06CD900502ECA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		4AEA6DE021998A78006351DB /* TrueLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,14 @@
 				53AFF8BE702A716C1E6C3309 /* Pods-TrueLove.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A62C35221C644020046C858 /* User Details */ = {
+			isa = PBXGroup;
+			children = (
+				4A62C35321C644230046C858 /* UserDetailsViewController.swift */,
+			);
+			path = "User Details";
 			sourceTree = "<group>";
 		};
 		4AEA6DD721998A78006351DB = {
@@ -160,6 +170,7 @@
 		4AFAE402219B32B7007871F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A62C35221C644020046C858 /* User Details */,
 				4AF5BDA821C46C1B00D6AE55 /* Login */,
 				4AEA6DE521998A78006351DB /* HomeViewController.swift */,
 				4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */,
@@ -350,6 +361,7 @@
 				4AF5BDAB21C46C8500D6AE55 /* LoginViewModel.swift in Sources */,
 				4A6044AC21A9DDBC006FDB45 /* RegistrationViewController.swift in Sources */,
 				4AFAE408219B3D0F007871F0 /* CardViewModel.swift in Sources */,
+				4A62C35421C644240046C858 /* UserDetailsViewController.swift in Sources */,
 				4AF5BDAC21C46C8500D6AE55 /* LoginController.swift in Sources */,
 				4A2F8B0A21A5E950008BB00F /* Advetiser.swift in Sources */,
 				4AEA6DFE2199A3A9006351DB /* CardView.swift in Sources */,
