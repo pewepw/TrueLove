@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = SwipingPhotosPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        window?.rootViewController = HomeViewController()
+//        window?.rootViewController = SwipingPhotosPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
         return true
     }
