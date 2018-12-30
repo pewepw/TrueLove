@@ -33,6 +33,11 @@ class RegistrationViewModel {
         }
     }
     
+    func checkFormValidity() {
+        let isFormValid = fullName?.isEmpty == false && email?.isEmpty == false && password?.isEmpty == false && bindableImage.value != nil
+        bindableIsFormValid.value = isFormValid
+    }
+    
     func performRegistration(completion: @escaping (Error?) -> ()) {
         guard let email = email, let password = password else { return }
         
@@ -79,7 +84,10 @@ class RegistrationViewModel {
         let uid = Auth.auth().currentUser?.uid ?? ""
         let docData = ["fullName": fullName ?? "",
                        "uid": uid,
-                       "imageUrl1": imageUrl]
+                       "imageUrl1": imageUrl,
+                       "age": 18,
+                       "minSeekingAge": SettingsTableViewController.defaultMinSeekingAge,
+                       "maxSeekingAge": SettingsTableViewController.defaultMaxSeekingAge] as [String : Any]
         
         Firestore.firestore().collection("users").document(uid).setData(docData) { (err) in
             if let err = err {
@@ -91,10 +99,7 @@ class RegistrationViewModel {
         }
     }
     
-    fileprivate func checkFormValidity() {
-        let isFormValid = fullName?.isEmpty == false && email?.isEmpty == false && password?.isEmpty == false
-        bindableIsFormValid.value = isFormValid
-    }
+    
     
     
 //    var image: UIImage? {
