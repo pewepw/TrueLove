@@ -11,6 +11,7 @@
 		4A23F6C221BEEB1D00F79B48 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A23F6C121BEEB1D00F79B48 /* SettingsTableViewController.swift */; };
 		4A2F8B0A21A5E950008BB00F /* Advetiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F8B0921A5E950008BB00F /* Advetiser.swift */; };
 		4A37F9EC21BBC7A800906E10 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37F9EB21BBC7A800906E10 /* Bindable.swift */; };
+		4A49268721D8C65E009B83C8 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49268621D8C65E009B83C8 /* PhotoController.swift */; };
 		4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */; };
 		4A6044AC21A9DDBC006FDB45 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */; };
 		4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */; };
@@ -39,6 +40,7 @@
 		4A23F6C121BEEB1D00F79B48 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		4A2F8B0921A5E950008BB00F /* Advetiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advetiser.swift; sourceTree = "<group>"; };
 		4A37F9EB21BBC7A800906E10 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		4A49268621D8C65E009B83C8 /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		4A589DDE21BB14300047E192 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4A6044AB21A9DDBC006FDB45 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		4A6044AD21A9E2CC006FDB45 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				4A62C35321C644230046C858 /* UserDetailsViewController.swift */,
 				4A62C35521C6AB690046C858 /* SwipingPhotosPageViewController.swift */,
+				4A49268621D8C65E009B83C8 /* PhotoController.swift */,
 			);
 			path = "User Details";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				4A37F9EC21BBC7A800906E10 /* Bindable.swift in Sources */,
 				4AEA6DE621998A78006351DB /* HomeViewController.swift in Sources */,
 				4A589DDF21BB14300047E192 /* RegistrationViewModel.swift in Sources */,
+				4A49268721D8C65E009B83C8 /* PhotoController.swift in Sources */,
 				4A6E60FD21C169A300354244 /* AgeRangeTableViewCell.swift in Sources */,
 				4A6044AE21A9E2CC006FDB45 /* CustomTextField.swift in Sources */,
 				4AEA6DE421998A78006351DB /* AppDelegate.swift in Sources */,
