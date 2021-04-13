@@ -121,7 +121,7 @@ DEPENDENCIES:
   - SDWebImage (~> 4.4.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - BoringSSL
     - Firebase
     - FirebaseAnalytics
@@ -165,4 +165,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 04eec4bd101a2275caaad710b8fb7887942fa4c9
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.1
